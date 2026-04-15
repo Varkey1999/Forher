@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Our Place</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="images/icon.png">
+</head>
+<body>
+    <div class="app-container">
+        <div class="countdown-card">
+            <h2 id="countdown-label">Loading...</h2>
+            <div id="timer">00d 00h 00m</div>
+        </div>
+
+        <div class="main-card">
+            <div class="image-container">
+                <img id="us-photo" src="images/1.jpg" alt="Us">
+            </div>
+            <div class="quote-container">
+                <p id="one-liner">Tap the heart for a surprise...</p>
+            </div>
+            <button class="heart-btn" onclick="newQuote()">❤️</button>
+        </div>
+
+        <div class="vault-container">
+            <button id="vault-btn" onclick="openVault()">🔒 The 30-Day Vault</button>
+            <div id="vault-content" class="hidden">
+                <p>✨ This is your secret message! ✨<br>I'm so glad you're mine. See you in another 30 days!</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
